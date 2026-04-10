@@ -48,6 +48,8 @@ sources: []
 - playbook
 - diagnostics
 - content-strategy
+- security
+- x-operator
 
 Rule: add new tags here before using them.
 

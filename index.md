@@ -7,12 +7,14 @@
 - [[projects/hermes/hermes]] Hermes runtime, local policy, and operating notes.
 - [[projects/jarvis-bridge/jarvis-bridge]] Boundary rules and bridge coordination with Jarvis.
 - [[projects/ilindex/ilindex]] ILINDEX-specific working knowledge and packet context.
+- [[projects/ilindex/x-operator]] ILINDEX X/Twitter operator mission, loop, and readiness status.
 
 ## Playbooks
 - [[playbooks/packet-intake]] Standard intake flow for new packets and source material.
 - [[playbooks/return-packaging]] How Hermes returns bounded outputs to Jarvis.
 - [[playbooks/checksum-validation]] How Hermes validates packet integrity before analysis.
 - [[playbooks/authority-boundaries]] Non-negotiable authority and write-boundary rules.
+- [[playbooks/x-operator-draft-loop]] Approval-gated draft loop for the ILINDEX X operator.
 
 ## Decisions
 - [[decisions/proposed/hermes-wiki-bootstrap]] Bootstrap decision for the Hermes wiki.
@@ -31,6 +33,7 @@
 - [[credentials/README]] Hermes credential directory rules and local-secret boundaries.
 - [[credentials/machine-and-bridge-context]] Non-secret machine and Jarvis bridge summary.
 - `credentials/x-operator.env.example` Push-safe env contract for the Hermes X operator.
+- [[credentials/x-operator-auth-notes]] Non-secret auth notes and security rules for the X operator.
 
 ## Meta
 - [[_meta/official-recommendation]] Official recommendation for Jarvis wiki vs Hermes wiki roles.

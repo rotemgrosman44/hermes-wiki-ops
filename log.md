@@ -7,3 +7,4 @@
 - 2026-04-10 03:00:33 IDT Approved copy-safe template adoption from Jarvis and added imported templates to Hermes wiki.
 - 2026-04-10 03:15:59 IDT Finalized Hermes wiki bootstrap and filed Jarvis-side architecture review request.
 - 2026-04-10 Added credentials directory, machine-and-bridge context, git-ignored local secret boundary, and X operator env contract.
+- 2026-04-10 Filed ILINDEX X operator project page, draft loop playbook, auth notes, and readiness report into the wiki.
