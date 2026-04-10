@@ -23,10 +23,30 @@ Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
 - Operator approval before any publish.
 - Direct messages stay out of the default loop.
 
+## Selection Priorities
+- Prefer diverse users and companies across cycles.
+- Avoid over-targeting the same accounts unless the thread is clearly the best fit.
+- Prefer threads over standalone posts when the thread gives enough context for a strong reply.
+- Rotate search themes across cycles so the lane does not collapse into one repeated keyword cluster.
+
 ## Tooling Baseline
 - Official X tooling first: `xurl`.
 - Official OAuth/user-context flow for writes later.
 - Browser automation only as fallback or review surface.
+
+## Output Contract
+Return only bottom-line decision material:
+1. Link to the thread or post.
+2. Account name or handle.
+3. Draft reply.
+4. One short line: why this is good now.
+
+Do not return:
+- confidence labels
+- security/readiness labels
+- long context summaries
+
+After the shortlist, ask one short learning question that helps improve the next cycle.
 
 ## Current Status
 - Wiki placement is complete.
