@@ -10,3 +10,4 @@
 - 2026-04-10 Filed ILINDEX X operator project page, draft loop playbook, auth notes, and readiness report into the wiki.
 - 2026-04-10 Approved default remote target hermes-wiki-ops for the Hermes wiki and documented push boundaries.
 - 2026-04-10 Approved default remote target `hermes-wiki-ops` for the Hermes wiki and documented push boundaries.
+- 2026-04-10 Filed official X API notes: xurl first, DM requires user tokens, DM stays outside the default lane.
