@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hermes Opportunity Card",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "detected_at",
+    "source_reference",
+    "opportunity_type",
+    "summary",
+    "evidence",
+    "recommended_next_action",
+    "priority_score",
+    "confidence_level"
+  ],
+  "properties": {
+    "id": {"type": "string"},
+    "title": {"type": "string"},
+    "detected_at": {"type": "string", "format": "date-time"},
+    "source_reference": {"type": "string"},
+    "opportunity_type": {"type": "string"},
+    "summary": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "recommended_next_action": {"type": "string"},
+    "priority_score": {"type": "number", "minimum": 0, "maximum": 100},
+    "confidence_level": {"type": "string", "enum": ["low", "medium", "high"]},
+    "notes": {"type": "string"},
+    "related_pages": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

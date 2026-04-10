@@ -1,0 +1,20 @@
+{
+  "boundary": {
+    "recommendation_is_not_execution": true,
+    "approval_is_not_execution": true,
+    "live_effects_require_managerial_approval": true
+  },
+  "global_forbidden_actions": [
+    "live_site_mutation",
+    "publish",
+    "external_posting",
+    "automated_deployment",
+    "unattended_recurring_execution"
+  ],
+  "global_approval_gated_actions": [
+    "draft_execution_plan",
+    "define_execution_owner",
+    "create_execution_flow",
+    "stage_release_candidate"
+  ]
+}
