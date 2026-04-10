@@ -20,6 +20,7 @@
 - [[decisions/proposed/hermes-wiki-bootstrap]] Bootstrap decision for the Hermes wiki.
 - [[decisions/proposed/jarvis-architecture-review-request]] Request for Jarvis-side architecture and loop review.
 - [[decisions/approved/jarvis-template-adoption]] Approved copy-safe template adoption from Jarvis.
+- [[decisions/approved/default-remote-target]] Approved default remote target for the Hermes wiki.
 
 ## Concepts
 
