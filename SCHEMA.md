@@ -50,6 +50,13 @@ sources: []
 - content-strategy
 - security
 - x-operator
+- identity
+- runtime
+- whatsapp
+- telegram
+- ui
+- adhd
+- human-loop
 
 Rule: add new tags here before using them.
 
@@ -76,4 +83,3 @@ Every durable page should link to at least two relevant pages when possible.
 - `credentials/local/` stores local-only secrets and is always git-ignored.
 - Do not copy raw secrets into durable pages, bridge packets, or committed notes.
 - Secrets seen in chat or screenshots must be rotated before live production use.
-

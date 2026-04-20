@@ -13,7 +13,7 @@ sources: []
 - App name: `ILINDEX Hermes Operator`
 - Organization: `ILINDEX`
 - Website URL: `https://ilindex.com/open-claw/`
-- Callback URL: `http://127.0.0.1:8787/x/callback`
+- Callback URL: `http://localhost:8080/callback`
 - Scope baseline: `tweet.read tweet.write users.read offline.access`
 - App mode target: automated operator flow with approval-gated posting
 
@@ -35,3 +35,21 @@ sources: []
 - [[projects/ilindex/x-operator]]
 - [[credentials/README]]
 - [[playbooks/x-operator-draft-loop]]
+
+## Current Blocker
+- The active Hermes WhatsApp runtime does not load X credentials from the wiki-local secret file automatically.
+- The current local X secret file is incomplete for x-cli:
+  - X_ACCESS_TOKEN is blank
+  - X_ACCESS_TOKEN_SECRET is blank
+  - X_CLIENT_SECRET is also blank
+- The current x-cli skill requires this exact set before read/write operations will work:
+  - X_API_KEY
+  - X_API_SECRET
+  - X_BEARER_TOKEN
+  - X_ACCESS_TOKEN
+  - X_ACCESS_TOKEN_SECRET
+- If the stored file uses X_CONSUMER_KEY / X_CONSUMER_SECRET, they must be mapped to X_API_KEY / X_API_SECRET for x-cli.
+
+## Operational Note
+- Paid X developer access alone is not enough for the current Hermes operator path.
+- The current operator skill path is x-cli, which still depends on user access token material, not just app-level client credentials.

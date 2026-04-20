@@ -1,0 +1,10 @@
+{
+  "handoff_id": "YYYY-MM-DD-topic-slug",
+  "source_runtime": "hermes-main|hermes-twitter-operator",
+  "target": "jarvis-main",
+  "state": "validated|blocked|needs_rotem",
+  "requested_by": "rotem|hermes|scheduled-review",
+  "requires_human_approval": true,
+  "why_now": "",
+  "canonical_sources": []
+}

@@ -25,3 +25,4 @@ The bridge is the approved handoff layer between Jarvis and Hermes.
 - [[projects/hermes/hermes]]
 - [[playbooks/packet-intake]]
 - [[playbooks/return-packaging]]
+- [[playbooks/jarvis-bridge-handoff-contract]]

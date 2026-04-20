@@ -17,9 +17,16 @@ sources: []
 - transfer-sha256.txt
 - summary.md when useful
 
+## Canonical Templates
+- `_templates/bridge-handoff-status.template.json`
+- `_templates/bridge-handoff-outbound.template.json`
+- `_templates/bridge-handoff-summary.template.md`
+
 ## Rule
 Return only what the packet contract allows. Do not widen scope during return packaging.
+Do not write directly into Jarvis canon while packaging a return bundle.
 
 ## Related
 - [[playbooks/packet-intake]]
 - [[playbooks/authority-boundaries]]
+- [[playbooks/jarvis-bridge-handoff-contract]]

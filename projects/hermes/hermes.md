@@ -36,3 +36,8 @@ Hermes is the bounded local runtime and operational synthesis layer.
 - Sample raw packet stored in [[raw/bridge-packets/sample-packet-ingest-2026-04-10]].
 - Validation report stored in [[raw/reports/hermes-wiki-doability-validation-2026-04-10]].
 - This confirms the Hermes wiki loop is operational.
+
+## Identity And Control (2026-04-17)
+- Canonical identity map: [[concepts/protocols/canonical-identity-map]]
+- Main runtime identity: [[entities/systems/hermes-main-madhatter]]
+- ADHD-first dashboard direction: [[projects/hermes/adhd-first-web-ui]]

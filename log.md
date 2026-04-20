@@ -11,3 +11,9 @@
 - 2026-04-10 Approved default remote target hermes-wiki-ops for the Hermes wiki and documented push boundaries.
 - 2026-04-10 Approved default remote target `hermes-wiki-ops` for the Hermes wiki and documented push boundaries.
 - 2026-04-10 Filed official X API notes: xurl first, DM requires user tokens, DM stays outside the default lane.
+- Added dedicated Chrome browser lane for X operator under `credentials/x-operator-browser-lane`.
+- 2026-04-11 Added x.ai management credential flow, account canon note, and example management env contract under `credentials/`.
+- 2026-04-12 Added X web browser env contract and refreshed credentials directory docs for the dedicated X browser lane.
+- 2026-04-12 Aligned `OBSIDIAN_VAULT_PATH` to `/home/rotemg/wiki` in `~/.hermes/.env` and `~/.hermes/profiles/jarvis/.env`, and refreshed `index.md` to match the newer credentials surface.
+- 2026-04-17 Added canonical identity entities, the identity map, a narrow Jarvis bridge handoff contract, bridge handoff templates, and the ADHD-first Hermes Web UI direction.
+- 2026-04-20 Approved private repo authority for Hermes code under `hermes-agent-rotem`; Nous remains upstream only.

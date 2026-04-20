@@ -68,3 +68,9 @@ Do not include:
 - [[projects/ilindex/x-operator]]
 - [[credentials/x-operator-auth-notes]]
 - [[playbooks/authority-boundaries]]
+
+## Auth Rule
+- Preferred auth path: xurl with official user-context auth.
+- Do not treat app-only keys or client credentials as sufficient for the full operator loop.
+- x-cli is not the default path for this Hermes lane unless X_API_KEY, X_API_SECRET, X_BEARER_TOKEN, X_ACCESS_TOKEN, and X_ACCESS_TOKEN_SECRET are all present and verified.
+- If Hermes is running from WhatsApp, finish auth outside the chat first, then return to the draft loop.

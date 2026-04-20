@@ -1,7 +1,7 @@
 ---
 title: ILINDEX X Operator
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-20
 type: project
 tags: [ilindex, x-operator, marketing, content-strategy, authority]
 sources: []
@@ -13,9 +13,9 @@ sources: []
 Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
 
 ## Output Target
-- About 5 Hebrew replies for relevant Israeli threads.
-- About 1 English reply for a major global AI figure or ecosystem thread.
-- Return fewer items when the pool is weak.
+- Follow the current harness packet for exact shortlist size and lane rules.
+- Prefer Hebrew-first replies and return fewer items when the pool is weak.
+- Do not pad with weak English items to satisfy an old fixed volume target.
 
 ## Workflow Mode
 - Discovery first.
@@ -30,9 +30,16 @@ Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
 - Rotate search themes across cycles so the lane does not collapse into one repeated keyword cluster.
 
 ## Tooling Baseline
-- Official X tooling first: `xurl`.
-- Official OAuth/user-context flow for writes later.
-- Browser automation only as fallback or review surface.
+- Official X tooling first: `xurl` for reads, search, and validation.
+- Browser automation is the live publish/review surface only when the current harness packet explicitly allows it.
+- `x-cli` remains fallback-only for allowed write shapes.
+
+## Current diagnostics (2026-04-20)
+- Recent runs show Gate B as the most reliable discovery/search/validation lane in this workspace.
+- Gate A/browser has repeatedly landed on the X login/signup shell with `Something went wrong. Try reloading.` and should be treated as unavailable when that happens.
+- Learning: when Gate A is blocked by missing CDP/login, keep discovery on Gate B and treat Gate C reply/quote as packet-blocked for the cycle.
+- `x-cli` reply/quote can still 403 on non-engaged threads; do not treat that as a general auth failure.
+- Use recent session summaries and the gate scorecard before each cycle.
 
 ## Output Contract
 Return only bottom-line decision material:
@@ -48,6 +55,11 @@ Do not return:
 
 After the shortlist, ask one short learning question that helps improve the next cycle.
 
+## Current Auth Decision
+- Official direction for this operator is xurl, not x-cli.
+- Reason: the current Hermes WhatsApp runtime does not load X secrets automatically, and the current local secret file does not contain the full OAuth 1.0a access-token pair required by x-cli.
+- x-cli remains fallback only if a complete token set exists.
+- Draft-only testing should move to xurl-based user auth first, then return to WhatsApp operation.
 ## Current Status
 - Wiki placement is complete.
 - Local credential contract exists under `credentials/`.
@@ -65,3 +77,9 @@ After the shortlist, ask one short learning question that helps improve the next
 - [[projects/ilindex/ilindex]]
 - [[playbooks/x-operator-draft-loop]]
 - [[credentials/x-operator-auth-notes]]
+
+
+## Dedicated Browser Lane
+- Hermes uses a dedicated Chrome profile for X web operations.
+- Canonical note: [[credentials/x-operator-browser-lane]]
+- This is the preferred live-write lane until official API write auth is completed end to end.
