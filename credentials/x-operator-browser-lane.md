@@ -1,47 +1,37 @@
 ---
 title: X Operator Dedicated Browser Lane
 created: 2026-04-10
-updated: 2026-04-10
-type: credential-note
-tags: [x-operator, browser, remote-debugging, hermes]
-sources: []
+updated: 2026-05-02
+type: summary
+tags: [x-operator, hermes, runtime, security]
+sources:
+  - /home/rotemg/.hermes-twitter-operator/control/twitter-operator/HERMES_TWITTER_GATE_CONTRACT.md
+  - /home/rotemg/.hermes-twitter-operator/scripts/twitter_operator_status.py
 ---
 
 # X Operator Dedicated Browser Lane
 
-## Decision
-Hermes uses a dedicated Chrome profile for X web operations.
+## Current Decision
+Hermes Twitter Operator uses a dedicated Gate A Chrome profile for X web operations.
 
-## Why
-- Stable remote control over an existing browser session.
-- No dependence on Rotem's daily Chrome tabs.
-- Session can be reused across runs.
-- Better fit for remote operation and later unattended execution.
-
-## Canonical Windows Paths
-- Chrome launcher script:
-  - `D:\hermes2-boys2\workspace\hermes-home\tools\x-web-operator\start-operator-browser.ps1`
-- Shared browser helpers:
-  - `D:\hermes2-boys2\workspace\hermes-home\tools\x-web-operator\shared.js`
-- Publish lane:
-  - `D:\hermes2-boys2\workspace\hermes-home\tools\x-web-operator\publish-replies.js`
-- Dedicated Chrome user data dir:
-  - `D:\hermes2-boys2\workspace\hermes-home\state\x-operator-chrome`
-- Remote debugging endpoint:
-  - `http://127.0.0.1:9223`
+## Runtime Truth
+- Runtime root: `/home/rotemg/.hermes-twitter-operator`
+- Launcher: `/home/rotemg/.hermes/control/scripts/start-x-operator-browser.ps1`
+- Gate A credential contract: `/home/rotemg/.hermes-twitter-operator/credentials/x-web.env`
+- Windows Chrome profile: `C:\Users\user\AppData\Local\Hermes\twitter-operator-clean-chrome`
+- WSL CDP proxy: `http://172.22.240.1:9225`
+- Browser surface is checked by `/home/rotemg/.hermes-twitter-operator/scripts/twitter_operator_status.py`
 
 ## Operational Rule
-- Hermes attaches to the dedicated Chrome profile.
-- Hermes does not depend on the human Chrome profile.
-- If the profile is already authenticated, Hermes skips login bootstrap.
-- Login bootstrap is fallback only.
+- Gate A is the only publish lane.
+- The operator attaches to the dedicated Chrome/CDP lane and reuses its authenticated X session.
+- A reachable browser is not enough: publish readiness requires a logged-in X page, usable composer/reply controls, viewport measurement, and proof after send.
+- If the browser is narrow, cropped, or laggy, use DOM-based targeting instead of screenshot positioning.
 
-## Current Validation
-- Attach over CDP: validated.
-- X home load in dedicated profile: validated.
-- Live publish via dedicated profile: validated.
+## Legacy Notes
+Older D-drive launcher paths and direct `127.0.0.1:9223` assumptions are legacy diagnostics only. They are not the active authority for this WSL Twitter operator. The active WSL-facing endpoint is the CDP proxy on `172.22.240.1:9225`.
 
-## Caveat
-- X web still has intermittent UI guards and duplicate checks.
-- For already-posted replies, X returns duplicate-style guard text.
-- For reliable unattended operation later, the dedicated profile should stay warm and logged in.
+## Related
+- [[projects/ilindex/x-operator]]
+- [[projects/ilindex/x-operator-active-rules]]
+- [[entities/systems/hermes-twitter-operator]]

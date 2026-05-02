@@ -1,7 +1,7 @@
 # Hermes Wiki Index
 
 > Operational knowledge catalog for Hermes.
-> Last updated: 2026-04-12
+> Last updated: 2026-05-02
 
 ## Projects
 - [[projects/hermes/hermes]] Hermes runtime, local policy, and operating notes.

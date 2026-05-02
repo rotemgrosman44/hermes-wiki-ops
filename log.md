@@ -30,3 +30,4 @@
 - 2026-05-01 21:04 IDT Added the 21:00 X-operator cron publish learning after a verified ybahat context-reset BEACON reply publish through Gate A.
 - 2026-05-02 13:04 IDT Added the 13:00 X-operator cron publish learning after a verified YossiBenHaim_ organization-budget / Claude-Code BEACON reply publish through Gate A.
 - 2026-05-02 14:30 IDT Added the X-operator LLM Wiki school: active rules, golden examples, run metrics, and deeper learning pages, with `projects/ilindex/x-operator.md` reduced to the canonical hub.
+- 2026-05-02 20:30 IDT Applied lean-context X-operator cleanup: default routine skill, recent-author ledger rule, Gate A browser/auth truth, Hebrew-only draft rule, and index refresh.

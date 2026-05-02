@@ -16,7 +16,9 @@ This is the short rule sheet the Hermes Twitter Operator may load on every norma
 ## Runtime Truth
 - Runtime root: `/home/rotemg/.hermes-twitter-operator`
 - Control surface: Telegram and Mission Control for the Twitter Operator only.
+- Default routine skill: `x-twitter-operator-lean`.
 - Durable learning: Hermes wiki, starting from [[projects/ilindex/x-operator]].
+- Recent-author dedupe: `/home/rotemg/.hermes-twitter-operator/state/recent_x_authors.json` as rolling aid, not permanent blocklist.
 - Do not use Jarvis, bridge, Meta/Facebook, or OpenClaw as runtime authority.
 
 ## Normal Run Budget

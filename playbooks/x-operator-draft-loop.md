@@ -49,8 +49,8 @@ Keep the rotation long enough that the lane does not feel repetitive.
 
 ## Quality Rule
 - Short, useful, operator-level replies.
-- Hebrew first for Israeli threads.
-- English for global AI figures or English-native threads.
+- Hebrew first and Hebrew-source only for this operator.
+- Do not draft Hebrew replies for English-only or non-Hebrew source/root/parent posts.
 - No hype, no fake certainty, no repetitive templating.
 
 ## Return Shape
@@ -79,7 +79,7 @@ Do not include:
 - [[playbooks/authority-boundaries]]
 
 ## Auth Rule
-- Preferred auth path: xurl with official user-context auth.
-- Do not treat app-only keys or client credentials as sufficient for the full operator loop.
-- x-cli is not the default path for this Hermes lane unless X_API_KEY, X_API_SECRET, X_BEARER_TOKEN, X_ACCESS_TOKEN, and X_ACCESS_TOKEN_SECRET are all present and verified.
-- If Hermes is running from WhatsApp, finish auth outside the chat first, then return to the draft loop.
+- Current publish path: Gate A browser only.
+- `xurl`, `x-cli`, and official API notes are diagnostic/legacy context only unless the current runbook explicitly re-enables them for read-only validation.
+- Do not use API write paths for publish in this harness.
+- If credentials or locations are missing, ask only for the current location, never for raw secret values.

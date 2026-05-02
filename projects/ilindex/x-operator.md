@@ -14,6 +14,7 @@ Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
 
 ## Runtime Authority
 - Live runtime: `/home/rotemg/.hermes-twitter-operator`
+- Default routine skill: `x-twitter-operator-lean`
 - Durable learning memory: this Hermes wiki.
 - Canonical operating rules: [[projects/ilindex/x-operator-active-rules]]
 - Quality examples: [[projects/ilindex/x-operator-golden-examples]]

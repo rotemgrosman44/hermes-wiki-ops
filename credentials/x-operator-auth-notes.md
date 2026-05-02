@@ -1,55 +1,42 @@
 ---
 title: X Operator Auth Notes
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-02
 type: summary
-tags: [credentials, x-operator, security, hermes]
-sources: []
+tags: [security, x-operator, hermes]
+sources:
+  - /home/rotemg/.hermes-twitter-operator/control/twitter-operator/HERMES_TWITTER_GATE_CONTRACT.md
+  - /home/rotemg/.hermes-twitter-operator/control/twitter-operator/HERMES_TWITTER_SIMPLE_RUNBOOK.md
 ---
 
 # X Operator Auth Notes
 
-## Durable Non-Secret Contract
-- App name: `ILINDEX Hermes Operator`
-- Organization: `ILINDEX`
-- Website URL: `https://ilindex.com/open-claw/`
-- Callback URL: `http://localhost:8080/callback`
-- Scope baseline: `tweet.read tweet.write users.read offline.access`
-- App mode target: automated operator flow with approval-gated posting
+## Current Runtime Decision
+The dedicated Twitter operator is browser-first and Gate A only for publish.
 
-## Local Secret Location
-- `credentials/local/x-operator.env`
+## Active Credential Surface
+- Gate A browser/login contract: `/home/rotemg/.hermes-twitter-operator/credentials/x-web.env`
+- Required non-secret key names in that file: `X_LOGIN_EMAIL`, `X_LOGIN_HANDLE`, `X_LOGIN_PASSWORD`
+- Secrets stay local. Never paste raw X credentials into Telegram, Wiki pages, bridge packets, or committed notes.
+
+## Publish Authority
+- Publish path: Gate A live browser only.
+- Manual publish requires Rotem's explicit numbered approval.
+- Cron has standing approval for at most one strongest eligible Hebrew item per scheduled run.
+- Success requires proof: direct X URL, tweet id, or clear browser/profile proof.
+
+## Out Of Default Scope
+- DM operations are outside the default operator mission.
+- `xurl`, `x-cli`, official X app keys, and API write attempts are diagnostic/legacy context only in the current harness.
+- Do not spend normal runs on disabled or paid X API routes.
+- Do not use x-cli/API write paths to bypass Gate A.
 
 ## Security Rule
-- Keep live secrets in the local file only.
-- Do not commit tokens, client secret, bearer tokens, or access tokens.
-- Treat any secret pasted into chat or screenshots as exposed.
-- Rotate exposed values before trusted live use.
-
-## Current Readiness
-- Enough structure exists for draft-only operator testing.
-- Live posting still requires rotated secrets and an explicit publish gate.
-- DM capability exists in permissions but is outside the default mission.
+- Keep live secrets only in local credential files.
+- Treat any secret pasted into chat, screenshots, or reports as exposed and rotate before trusted use.
+- If a credential location is missing, ask only for the current location, not for raw values.
 
 ## Related
 - [[projects/ilindex/x-operator]]
-- [[credentials/README]]
-- [[playbooks/x-operator-draft-loop]]
-
-## Current Blocker
-- The active Hermes WhatsApp runtime does not load X credentials from the wiki-local secret file automatically.
-- The current local X secret file is incomplete for x-cli:
-  - X_ACCESS_TOKEN is blank
-  - X_ACCESS_TOKEN_SECRET is blank
-  - X_CLIENT_SECRET is also blank
-- The current x-cli skill requires this exact set before read/write operations will work:
-  - X_API_KEY
-  - X_API_SECRET
-  - X_BEARER_TOKEN
-  - X_ACCESS_TOKEN
-  - X_ACCESS_TOKEN_SECRET
-- If the stored file uses X_CONSUMER_KEY / X_CONSUMER_SECRET, they must be mapped to X_API_KEY / X_API_SECRET for x-cli.
-
-## Operational Note
-- Paid X developer access alone is not enough for the current Hermes operator path.
-- The current operator skill path is x-cli, which still depends on user access token material, not just app-level client credentials.
+- [[projects/ilindex/x-operator-active-rules]]
+- [[credentials/x-operator-browser-lane]]
