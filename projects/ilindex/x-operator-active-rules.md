@@ -52,6 +52,7 @@ This is the short rule sheet the Hermes Twitter Operator may load on every norma
 - Put quality examples in [[projects/ilindex/x-operator-golden-examples]].
 - Put deep failures and diagnostics in [[projects/ilindex/x-operator-learning-school]].
 - Put timing/tool-call evidence in [[projects/ilindex/x-operator-run-metrics]].
+- Cron BEACON can pass the high bar on a low-impression Hebrew builder reply when it names real Claude Code + Telegram/remote-control/server workflow and dedupe/composer checks are clean; prefer no-link operational framing around context, permissions, logs, tests, and rollback.
 
 ## Related
 - [[projects/ilindex/x-operator]]
