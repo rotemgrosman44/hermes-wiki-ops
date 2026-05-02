@@ -17,3 +17,16 @@
 - 2026-04-12 Aligned `OBSIDIAN_VAULT_PATH` to `/home/rotemg/wiki` in `~/.hermes/.env` and `~/.hermes/profiles/jarvis/.env`, and refreshed `index.md` to match the newer credentials surface.
 - 2026-04-17 Added canonical identity entities, the identity map, a narrow Jarvis bridge handoff contract, bridge handoff templates, and the ADHD-first Hermes Web UI direction.
 - 2026-04-20 Approved private repo authority for Hermes code under `hermes-agent-rotem`; Nous remains upstream only.
+- 2026-04-23 13:19 IDT Added the 13:00 X-operator interval report and refreshed `projects/ilindex/x-operator.md` with the latest Gate A discovery / Gate B credits-blocked learning.
+- 2026-04-24 21:10 IDT Added the 21:00 X-operator interval report, recorded the Pablo/agent-cost publish proof, and refreshed `projects/ilindex/x-operator.md` with the latest narrow-viewport Gate A publish learning.
+- 2026-04-25 09:12 IDT Added the 09:00 X-operator interval report, recorded the Michaelzil BEACON publish proof, and refreshed `projects/ilindex/x-operator.md` with the latest Gate B discovery + Gate A inline-composer publish learning.
+- 2026-04-27 Cleaned the X-operator reporting boundary: ILINDEX wiki remains canonical internal memory, while Telegram reports should expose only operational lessons.
+- 2026-04-28 13:16 IDT Added the 13:00 X-operator cron publish learning to `projects/ilindex/x-operator.md` after a verified FundJudah-thread BEACON reply publish through Gate A.
+- 2026-04-29 13:09 IDT Added the 13:00 X-operator cron publish learning after a verified theroadtlv deployment-friction HUNTER reply publish through Gate A.
+- 2026-04-29 21:09 IDT Added the 21:00 X-operator cron publish learning after a verified Orenisraelson Claude-Code onboarding BEACON reply publish through Gate A.
+- 2026-04-30 13:10 IDT Added the 13:00 X-operator cron publish learning after a verified aloncarmel MCP/AI-connectors BEACON reply publish through Gate A.
+- 2026-05-01 Added Hermes ops runtime authority: `/home/rotemg/ops/hermes-ops-runtime` is the sanitized operations repo; OneDrive New project is retired/quarantine only; Google Drive is export-only for sanitized reports and handoff packets.
+- 2026-05-01 17:08 IDT Added the 17:00 X-operator cron publish learning after a verified AsherAharonov Claude-Code workflow-limit BEACON reply publish through Gate A.
+- 2026-05-01 21:04 IDT Added the 21:00 X-operator cron publish learning after a verified ybahat context-reset BEACON reply publish through Gate A.
+- 2026-05-02 13:04 IDT Added the 13:00 X-operator cron publish learning after a verified YossiBenHaim_ organization-budget / Claude-Code BEACON reply publish through Gate A.
+- 2026-05-02 14:30 IDT Added the X-operator LLM Wiki school: active rules, golden examples, run metrics, and deeper learning pages, with `projects/ilindex/x-operator.md` reduced to the canonical hub.

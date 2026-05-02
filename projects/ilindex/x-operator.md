@@ -1,7 +1,7 @@
 ---
 title: ILINDEX X Operator
 created: 2026-04-10
-updated: 2026-04-20
+updated: 2026-05-02
 type: project
 tags: [ilindex, x-operator, marketing, content-strategy, authority]
 sources: []
@@ -11,6 +11,14 @@ sources: []
 
 ## Mission
 Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
+
+## Runtime Authority
+- Live runtime: `/home/rotemg/.hermes-twitter-operator`
+- Durable learning memory: this Hermes wiki.
+- Canonical operating rules: [[projects/ilindex/x-operator-active-rules]]
+- Quality examples: [[projects/ilindex/x-operator-golden-examples]]
+- Deep learning school: [[projects/ilindex/x-operator-learning-school]]
+- Run evidence and timing: [[projects/ilindex/x-operator-run-metrics]]
 
 ## Output Target
 - Follow the current harness packet for exact shortlist size and lane rules.
@@ -29,17 +37,11 @@ Operate the public `claw.ilindex` voice on X in a practical, builder-facing way.
 - Prefer threads over standalone posts when the thread gives enough context for a strong reply.
 - Rotate search themes across cycles so the lane does not collapse into one repeated keyword cluster.
 
-## Tooling Baseline
-- Official X tooling first: `xurl` for reads, search, and validation.
-- Browser automation is the live publish/review surface only when the current harness packet explicitly allows it.
-- `x-cli` remains fallback-only for allowed write shapes.
-
-## Current diagnostics (2026-04-20)
-- Recent runs show Gate B as the most reliable discovery/search/validation lane in this workspace.
-- Gate A/browser has repeatedly landed on the X login/signup shell with `Something went wrong. Try reloading.` and should be treated as unavailable when that happens.
-- Learning: when Gate A is blocked by missing CDP/login, keep discovery on Gate B and treat Gate C reply/quote as packet-blocked for the cycle.
-- `x-cli` reply/quote can still 403 on non-engaged threads; do not treat that as a general auth failure.
-- Use recent session summaries and the gate scorecard before each cycle.
+## Memory Load Policy
+- Normal runs load the current runbook and [[projects/ilindex/x-operator-active-rules]] only.
+- Draft quality improvement may consult [[projects/ilindex/x-operator-golden-examples]].
+- Diagnosis and deliberate improvement may consult [[projects/ilindex/x-operator-learning-school]] and [[projects/ilindex/x-operator-run-metrics]].
+- Raw reports and old sessions are evidence, not default prompt context.
 
 ## Output Contract
 Return only bottom-line decision material:
@@ -56,19 +58,19 @@ Do not return:
 After the shortlist, ask one short learning question that helps improve the next cycle.
 
 ## Current Auth Decision
-- Official direction for this operator is xurl, not x-cli.
-- Reason: the current Hermes WhatsApp runtime does not load X secrets automatically, and the current local secret file does not contain the full OAuth 1.0a access-token pair required by x-cli.
-- x-cli remains fallback only if a complete token set exists.
-- Draft-only testing should move to xurl-based user auth first, then return to WhatsApp operation.
+- Active direction for this operator is browser/web discovery and Gate A publish.
+- Paid X API discovery is disabled while credits are unavailable.
+- `x-cli` is not a publish lane for this harness.
+
 ## Current Status
 - Wiki placement is complete.
 - Local credential contract exists under `credentials/`.
 - Local secret file exists under `credentials/local/`.
-- Ready for draft-only test.
-- Not ready for unattended live posting.
+- Ready for bounded autonomous cron publish when Gate A is `publish_ready`, standing approval exists, and proof is written.
+- Not ready for unattended multi-item posting or Gate C publish.
 
 ## Hard Stops
-- No autonomous publish.
+- No autonomous publish outside the standing one-item cron approval window or an explicitly approved manual publish window.
 - No use of account password as the automation contract.
 - No direct canon promotion from operator notes.
 - Secrets exposed in chat must be rotated before any trusted live lane.

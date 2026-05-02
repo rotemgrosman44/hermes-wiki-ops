@@ -1,7 +1,7 @@
 ---
 title: X Operator Draft Loop
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-02
 type: playbook
 tags: [playbook, x-operator, ilindex, marketing]
 sources: []
@@ -19,6 +19,12 @@ sources: []
 7. Ask one short learning question for the next cycle.
 8. Wait for operator approval.
 9. Publish only in a later approved phase.
+
+## Memory Load Rule
+- Normal operation should use [[projects/ilindex/x-operator-active-rules]] rather than broad history.
+- Use [[projects/ilindex/x-operator-golden-examples]] only when reply quality needs calibration.
+- Use [[projects/ilindex/x-operator-run-metrics]] and [[projects/ilindex/x-operator-learning-school]] only for diagnosis or deliberate improvement.
+- Raw reports remain evidence, not default context.
 
 ## Freshness Rule
 - Preferred: last 2 to 3 days.
@@ -63,9 +69,12 @@ Do not include:
 - Draft-first by default.
 - DM scope is disabled in the default lane.
 - If the candidate pool is weak, return fewer items and say so plainly.
+- In a manual approved publish window, execute the approved numbered set silently through Gate A, preserve exact approved shape, verify each publish, and treat blocked-author reply surfaces as hard drops unless Rotem approves a new shape.
 
 ## Related
 - [[projects/ilindex/x-operator]]
+- [[projects/ilindex/x-operator-active-rules]]
+- [[projects/ilindex/x-operator-golden-examples]]
 - [[credentials/x-operator-auth-notes]]
 - [[playbooks/authority-boundaries]]
 

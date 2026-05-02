@@ -9,6 +9,10 @@
 - [[projects/jarvis-bridge/jarvis-bridge]] Boundary rules and bridge coordination with Jarvis.
 - [[projects/ilindex/ilindex]] ILINDEX-specific working knowledge and packet context.
 - [[projects/ilindex/x-operator]] ILINDEX X/Twitter operator mission, loop, and readiness status.
+- [[projects/ilindex/x-operator-active-rules]] Short active rule sheet for normal X operator runs.
+- [[projects/ilindex/x-operator-golden-examples]] Proven X operator examples for quality calibration.
+- [[projects/ilindex/x-operator-run-metrics]] Timing, tool-call, compression, and proof metrics for X operator diagnosis.
+- [[projects/ilindex/x-operator-learning-school]] Deeper recursive-learning school for X operator diagnostics and improvement.
 
 ## Playbooks
 - [[playbooks/packet-intake]] Standard intake flow for new packets and source material.
